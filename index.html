@@ -221,13 +221,29 @@
                                     <span class="valor">R$ 60,00</span>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <div class="item-corte">
+                                        <div class="imagem-corte">
+                                            <img src="src/images/precos/4.png" alt="Corte Tradicional">
+                                        </div>
+                                        <div class="detalhes-corte">
+                                            <h3>Bigods Premium</h3>
+                                            <p>Para quem busca a elegancia de barba, cabelo e bigode.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="valor">R$ 80,00</span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="section_5" class="agenda py-5">
+        <section id="section_5" class="agenda py-5">
             <div class="container">
                 <h2>Agendar</h2>
                 <div class="row">
@@ -239,73 +255,102 @@
                             </div>
                             <div class="mb-3">
                                 <label for="appointmentTime" class="form-label">Horário:</label>
-                                <input type="time" class="form-control" id="appointmentTime" required>
+                                <select class="form-control" id="appointmentTime" required>
+                                    <!-- Aqui adicionamos os horários de 8h às 20h em intervalos de 1 hora -->
+                                    <option value="" disabled selected>Selecione o horário</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="appointmentProcedure" class="form-label">Procedimento:</label>
+                                <select class="form-control" id="appointmentProcedure" required>
+                                    <!-- Aqui adicionamos as opções de procedimentos -->
+                                    <option value="" disabled selected>Selecione o procedimento</option>
+                                    <option value="Barba Perfeita">Barba Perfeita</option>
+                                    <option value="Acerte o Estilo">Acerte o Estilo</option>
+                                    <option value="Estilos que Impressionam">Estilos que Impressionam</option>
+                                    <option value="Bigods Premium">Bigods Premium</option>
+                                    <!-- Adicione mais procedimentos, se necessário -->
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-primary">Agendar</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="section_6" class="contato py-5">
             <div class="container">
-              <h2>Contato</h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <form id="contactForm">
-                    <div class="mb-3">
-                      <label for="nome" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="nome" name="nome" required>
+                <h2>Contato</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">E-mail</label>
-                      <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <h3>Informações de Contato</h3>
+                            <p><i class="bi bi-geo-alt-fill"></i> Endereço: Rua dos Barbeiros, 123, Centro</p>
+                            <p><i class="bi bi-telephone-fill"></i> Telefone: (11) 1234-5678</p>
+                            <p><i class="bi bi-envelope-fill"></i> Email: contato@bigods.com</p>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="telefone" class="form-label">Telefone</label>
-                      <input type="tel" class="form-control" id="telefone" name="telefone" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="mensagem" class="form-label">Mensagem</label>
-                      <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                  </form>
                 </div>
-                <div class="col-md-6">
-                  <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <p><i class="bi bi-geo-alt-fill"></i> Endereço: Rua dos Barbeiros, 123, Centro</p>
-                    <p><i class="bi bi-telephone-fill"></i> Telefone: (11) 1234-5678</p>
-                    <p><i class="bi bi-envelope-fill"></i> Email: contato@bigods.com</p>
-                    <div class="social-icons">
-                      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                      <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
-          
-          <footer class="footer py-3">
+        </section>
+
+        <footer class="footer py-3">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="mb-0">&copy; 2023 Bigods - Todos os direitos reservados.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2023 Bigods - Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-md-end mb-0">
+                            <li class="list-inline-item"><a href="#">Política de Privacidade</a></li>
+                            <li class="list-inline-item"><a href="#">Termos de Serviço</a></li>
+                            <li class="list-inline-item"><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <ul class="list-inline text-md-end mb-0">
-                    <li class="list-inline-item"><a href="#">Política de Privacidade</a></li>
-                    <li class="list-inline-item"><a href="#">Termos de Serviço</a></li>
-                    <li class="list-inline-item"><a href="#">Contato</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </footer>         
+        </footer>
 
 
 

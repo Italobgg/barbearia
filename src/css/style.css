@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
 /* Definição de variáveis */
 :root {
   --bg-white: #fcfcfc;
@@ -33,7 +35,7 @@ body {
 
 /* Estilização do Navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--bg-dark);
 }
 
 .navbar-brand {
@@ -133,6 +135,7 @@ body {
   font-size: 3.5em;
   font-weight: var(--font-weight-bold);
   color: var(--dark-color);
+  font-family: 'EB Garamond', serif;
 }
 
 .sobre-nos p {
@@ -142,9 +145,10 @@ body {
 }
 
 .sobre-nos h3 {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   color: var(--dark-color);
   margin-top: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .sobre-nos span {
@@ -165,6 +169,7 @@ body {
   font-weight: var(--font-weight-bold);
   color: var(--dark-color);
   margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .servicos p {
@@ -182,10 +187,11 @@ body {
 }
 
 .servicos h4 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: var(--font-weight-bold);
   color: var(--dark-color);
   margin-bottom: 10px;
+  font-family: 'EB Garamond', serif;
 }
 
 .border-servicos {
@@ -202,6 +208,7 @@ body {
   font-weight: var(--font-weight-bold);
   color: var(--dark-color);
   margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .tabela {
@@ -239,6 +246,7 @@ body {
   font-size: 1.5em;
   font-weight: var(--font-weight-bold);
   margin-bottom: 5px;
+  font-family: 'EB Garamond', serif;
 }
 
 .detalhes-corte p {
@@ -250,86 +258,53 @@ body {
   font-weight: var(--font-weight-bold);
 }
 
-/* Estilização da seção Agenda */
+/* Estilização da seção de agendamento */
+.agenda {
+  background-color: var(--bg-da);
+}
+
 .agenda h2 {
   font-size: 3.5em;
   font-weight: var(--font-weight-bold);
   color: var(--dark-color);
   margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .agenda form {
-  background-color: var(--bg-dark);
-  padding: 30px;
-  border-radius: var(--border-radius-medium);
-}
-
-.agenda form label {
-  font-size: 20px;
-  color: var(--dark-color);
-}
-
-.agenda form input[type="date"],
-.agenda form input[type="time"],
-.agenda form input[type="text"],
-.agenda form input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: var(--border-radius-small);
   margin-bottom: 20px;
+}
+
+.agenda label {
   font-size: 16px;
   color: var(--dark-color);
 }
 
-.agenda form input[type="date"]:focus,
-.agenda form input[type="time"]:focus,
-.agenda form input[type="text"]:focus,
-.agenda form input[type="tel"]:focus {
-  outline: none;
+.agenda input[type="date"],
+.agenda select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: var(--border-radius-small);
+  font-size: 16px;
+  color: var(--dark-color);
 }
 
-.agenda form button {
-  font-size: 1.2em;
-  font-weight: var(--font-weight-bold);
-  background-color: var(--primary-color);
+.agenda button[type="submit"] {
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
   color: var(--white-color);
+  background-color: var(--primary-color);
   border: none;
-  padding: 12px 30px;
-  border-radius: var(--border-radius-medium);
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.agenda form button:hover {
+.agenda button[type="submit"]:hover {
   background-color: var(--primary-hover-color);
 }
 
-@media (max-width: 768px) {
-  .agenda h2 {
-    font-size: 2em;
-  }
-
-  .agenda form {
-    padding: 20px;
-  }
-
-  .agenda form label {
-    font-size: 16px;
-  }
-
-  .agenda form input[type="date"],
-  .agenda form input[type="time"],
-  .agenda form input[type="text"],
-  .agenda form input[type="tel"] {
-    font-size: 14px;
-  }
-
-  .agenda form button {
-    font-size: 1em;
-    padding: 10px 20px;
-  }
-}
 
 /* Estilização da seção de contato */
 .contato {
@@ -341,12 +316,14 @@ body {
   font-weight: var(--font-weight-bold);
   color: var(--white-color);
   margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
 }
 
 .contato h3 {
   font-size: 2.5em;
   font-weight: var(--font-weight-bold);
   color: var(--white-color);
+  font-family: 'EB Garamond', serif;
 }
 
 .contato form {
