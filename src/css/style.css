@@ -1,11 +1,13 @@
 /* Definição de variáveis */
 :root {
-  --bg-white: #F7EFE9;
+  --bg-white: #fcfcfc;
   --bg-dark: #1c1b1b;
   --white-color: #F7EFE9;
   --dark-color: #353535;
   --primary-color: #ff3838;
+  --secondary-color: #020887;
   --primary-hover-color: #ff6c6c;
+  --secondary-hover-color: #227C9D;
   --p-color: #dddddd;
   --p-color-dark: #303030;
 
@@ -48,7 +50,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--primary-hover-color);
 }
 
 /* Estilização das seções */
@@ -154,14 +156,14 @@ body {
 
 /* Estilização das seções "Serviços" */
 .servicos {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-white);
   padding: 35px 0;
 }
 
 .servicos h2 {
   font-size: 3.5em;
   font-weight: var(--font-weight-bold);
-  color: var(--primary-color);
+  color: var(--dark-color);
   margin-bottom: 20px;
 }
 
@@ -191,6 +193,237 @@ body {
   border-radius: var(--border-radius-medium);
   background-color: var(--bg-white);
   padding: 20px;
+}
+
+/* Estilização da tabela de preços */
+
+.precos h2 {
+  font-size: 3.5em;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela th,
+.tabela td {
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela td {
+  color: var(--dark-color);
+}
+
+.item-corte {
+  display: flex;
+  align-items: center;
+}
+
+.imagem-corte {
+  flex: 0 0 100px;
+  margin-right: 15px;
+}
+
+.imagem-corte img {
+  max-width: 100%;
+  border-radius: var(--border-radius-medium);
+}
+
+.detalhes-corte h3 {
+  font-size: 1.5em;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 5px;
+}
+
+.detalhes-corte p {
+  font-size: 16px;
+}
+
+.valor {
+  font-size: 1.5em;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Estilização da seção Agenda */
+.agenda h2 {
+  font-size: 3.5em;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.agenda form {
+  background-color: var(--bg-dark);
+  padding: 30px;
+  border-radius: var(--border-radius-medium);
+}
+
+.agenda form label {
+  font-size: 20px;
+  color: var(--dark-color);
+}
+
+.agenda form input[type="date"],
+.agenda form input[type="time"],
+.agenda form input[type="text"],
+.agenda form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: var(--border-radius-small);
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--dark-color);
+}
+
+.agenda form input[type="date"]:focus,
+.agenda form input[type="time"]:focus,
+.agenda form input[type="text"]:focus,
+.agenda form input[type="tel"]:focus {
+  outline: none;
+}
+
+.agenda form button {
+  font-size: 1.2em;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 12px 30px;
+  border-radius: var(--border-radius-medium);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agenda form button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+@media (max-width: 768px) {
+  .agenda h2 {
+    font-size: 2em;
+  }
+
+  .agenda form {
+    padding: 20px;
+  }
+
+  .agenda form label {
+    font-size: 16px;
+  }
+
+  .agenda form input[type="date"],
+  .agenda form input[type="time"],
+  .agenda form input[type="text"],
+  .agenda form input[type="tel"] {
+    font-size: 14px;
+  }
+
+  .agenda form button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+/* Estilização da seção de contato */
+.contato {
+  background-color: var(--bg-dark);
+}
+
+.contato h2 {
+  font-size: 3.5em;
+  font-weight: var(--font-weight-bold);
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.contato h3 {
+  font-size: 2.5em;
+  font-weight: var(--font-weight-bold);
+  color: var(--white-color);
+}
+
+.contato form {
+  margin-bottom: 20px;
+}
+
+.contato label {
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.contato input[type="text"],
+.contato input[type="email"],
+.contato input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  color: var(--white-color);
+  border-radius: var(--border-radius-small);
+  font-size: 16px;
+}
+
+.contato button[type="submit"] {
+  font-size: 18px;
+  font-weight: var(--font-weight-normal);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+}
+
+.contato button[type="submit"]:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+
+/* Estilização do footer */
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--p-color);
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--primary-hover-color);
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -257,6 +490,29 @@ body {
   }
 
   .servicos h4 {
+    font-size: 1.2em;
+  }
+
+  /* Estilização responsiva para dispositivos móveis */
+  .tabela th,
+  .tabela td {
+    font-size: 14px;
+  }
+
+  .imagem-corte {
+    flex: 0 0 80px;
+    margin-right: 10px;
+  }
+
+  .detalhes-corte h3 {
+    font-size: 1.2em;
+  }
+
+  .detalhes-corte p {
+    font-size: 14px;
+  }
+
+  .valor {
     font-size: 1.2em;
   }
 }
